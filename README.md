@@ -25,6 +25,10 @@ Users should be able to:
 ![](https://github.com/Piyushbajpai11/Ticket_Generator/blob/7f2bd348f29d42ee1a48fb42cf7bceebc492c4f4/images/Screenshot%20(49).png)  
 ![](https://github.com/Piyushbajpai11/Ticket_Generator/blob/7f2bd348f29d42ee1a48fb42cf7bceebc492c4f4/images/Screenshot%20(51).png)  
 
+## Links 
++ Solution URL : [https://piyushbajpai11.github.io/Ticket_Generator/]
++ Repository URL : [https://github.com/Piyushbajpai11/Ticket_Generator]
+
 ## Built With  
 * HTML5
 * CSS3
