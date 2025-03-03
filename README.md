@@ -21,9 +21,9 @@ Users should be able to:
 * View the optimal layout for the interface depending on their device's screen size
 * See hover and focus states for all interactive elements on the page
 
-## Screnshot
-[](https://github.com/Piyushbajpai11/Ticket_Generator/blob/7f2bd348f29d42ee1a48fb42cf7bceebc492c4f4/images/Screenshot%20(49).png)  
-[](https://github.com/Piyushbajpai11/Ticket_Generator/blob/7f2bd348f29d42ee1a48fb42cf7bceebc492c4f4/images/Screenshot%20(51).png)  
+## Screenshot
+![](https://github.com/Piyushbajpai11/Ticket_Generator/blob/7f2bd348f29d42ee1a48fb42cf7bceebc492c4f4/images/Screenshot%20(49).png)  
+![](https://github.com/Piyushbajpai11/Ticket_Generator/blob/7f2bd348f29d42ee1a48fb42cf7bceebc492c4f4/images/Screenshot%20(51).png)  
 
 ## Built With  
 * HTML5
