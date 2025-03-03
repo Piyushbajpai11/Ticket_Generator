@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Conference ticket generator</title>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo-full.svg" alt="">
+    </div>
+
+    <div class="data_entry">
+      <div class="heading">
+        <h1>Your Journey to Coding Conf <br>2025 Starts Here!</h1>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+      </div>
+
+      <div class="form">
+        <p class="input-info">Upload Avatar</p>
+        <div class="uploadFile">
+          <img src="images/icon-upload.svg" alt="">
+          <p>Drag and drop or click to upload</p>
+        </div>
+
+        <div class="info-text">
+          <img src="images/icon-info.svg" alt="">
+          Upload your photo (JPG or PNG, max size: 500KB).
+        </div>
+        <p>Full Name</p>
+        <input type="text" placeholder="Full Name" class="fName">
+        <p>Email Address</p>
+        <input type="email" placeholder="example@email.com" class="email">
+        <p>GitHub Username</p>
+        <input type="text" placeholder="@yourusername" class="githubId">
+
+        <button class="generate-ticket">Generate My Ticket</button>
+
+
+      </div>
+
+      <div class="attribution">
+        Challenge by:<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>,
+        Coded by:<a href="https://github.com/Piyushbajpai11"> Piyush Bajpai</a>.
+      </div>
+
+    </div>
+
+
+
+
+    <div class="ticket-generated">
+
+      <div class="conHeading">
+        <h1>Congrats, <span class="fullName">Full Name</span>! Your <br>ticket is ready.</h1>
+        <p>We've emailed your ticket to <br><span class="emailAddress">Email Address</span> and will send <br>updates in
+          the run up to the
+          event.</p>
+      </div>
+
+      <div class="ticket">
+        <img src="images/pattern-ticket.svg" alt="" class="ticket-background">
+        <div class="ticket-content">
+          <!-- ************************First Part************************ -->
+          <div class="first-part">
+            <img src="images/logo-full.svg" alt="" class="ticket-logo">
+            <p class="ticket-date">
+              <span class="tDate">3 Mar 2025,</span>
+              India
+            </p>
+            <div class="personal">
+              <img src="images/image-avatar.jpg" alt="" class="avatar">
+              <div class="info">
+                <div class="name">
+                  <p class="tName">Name</p>
+                </div>
+                <div class="github">
+                  <img src="images/icon-github.svg" alt="">
+                  <p class="tGithub">@yourGithub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second-part">
+            <p class="ticket-num">#16211911</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

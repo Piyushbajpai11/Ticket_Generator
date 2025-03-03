@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+:root {
+  /* Neutral Colors */
+  --Neutral-0: hsl(0, 0%, 100%);
+  --Neutral-300: hsl(252, 6%, 83%);
+  --Neutral-500: hsl(245, 15%, 58%);
+  --Neutral-700: hsl(245, 19%, 35%);
+  --neutral-700-op-low: hsl(245, 19%, 35%, 0.2);
+  --Neutral-900: hsl(248, 70%, 10%);
+
+  /* Orange Colors */
+  --Orange-500: hsl(7, 88%, 67%);
+  --Orange-700: hsl(7, 71%, 60%);
+
+  /* Gradient */
+  --Gradient-text: linear-gradient(
+    to right,
+    hsl(7, 86%, 67%),
+    hsl(0, 0%, 100%)
+  );
+
+  /* Font */
+  --font-family: "Inconsolata", sans-serif;
+  --font-400: 400;
+  --font-500: 500;
+  --font-700: 700;
+  --font-800: 800;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+body{
+    background-image: 
+        url(images/pattern-circle.svg),
+        url(images/pattern-lines.svg),
+        url(images/pattern-squiggly-line-bottom-desktop.svg),
+        url(images/pattern-squiggly-line-top.svg),
+        url(images/background-desktop.png);
+    background-position: 
+        right center,
+        top center,
+        bottom left,
+        right top,
+        
+        left top;
+    background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        repeat;
+    color: #fff;
+    background-size: 
+        
+        auto,
+        auto,
+        auto,
+        auto,
+        cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.data_entry{
+    display: block;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+
+.heading {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 15px;
+}
+
+.heading h1{
+    font-size: 3.4rem;
+    margin-bottom: 15px;
+}
+
+.heading p{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #b8b5b5;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 30px 520px;
+}
+
+.input-info{
+    font-size: 1.1rem;
+    color: #f2eded;
+}
+
+.uploadFile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px dashed #706f6f;
+    opacity: 1;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 110px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.info-text{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    width: 400px;
+    margin-bottom: 20px;
+    font-size: .7rem;
+    color: #787575;
+}
+
+input {
+        width: 100%;
+        display: block;
+        padding: 1.2rem;
+        border-radius: 12px;
+        margin-top: 0.7rem;
+        background-color: var(--neutral-700-op-low);
+        border: 1px solid var(--Neutral-500);
+        color: var(--Neutral-0);
+        font-size: 20px;
+        margin-bottom: 15px;
+
+        &:focus {
+          outline: 5px solid var(--Neutral-700);
+        }
+      }
+
+button{
+    width: 100%;
+    height: 60px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    border-radius: 10px;
+    background: var(--Orange-500);
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.attribution{
+    display: flex;
+    margin-top: 40px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.attribution a{
+    color: var(--Orange-500);
+    text-decoration: none;
+}
+
+.ticket-generated{
+    display: none;
+}
+
+.conHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.conHeading h1{
+    font-size: 3.4rem;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.conHeading p{
+    font-size: 1.4rem;
+    color: #b8b5b5;
+    line-height: 25px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.conHeading h1 span{
+    background: var(--Gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conHeading p span{
+    color: var(--Orange-500);
+}   
+
+.ticket {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  margin-top: 78px;
+  margin-bottom: 42px;
+}
+
+.ticket-background {
+  width: 100%;
+  height: auto;
+}
+
+.ticket-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 2rem;
+}
+
+.first-part {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 2rem;
+  /* Removing this line since it's already in the ticket image */
+  /* border-right: 2px dashed #ddd; */
+}
+
+.ticket-logo {
+  width: 80%;
+  height: auto;
+}
+
+.ticket-date {
+  font-size: 1.3rem;
+  color: #fdfdfd;
+  padding-left: 60px;
+}
+
+.ticket-date span {
+  font-weight: 500;
+}
+
+.personal {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: 30px;
+}
+
+.personal .avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.name p {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.github img {
+  width: 30px;
+  height: 30px;
+}
+
+.github p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.second-part {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 165px;
+}
+
+.ticket-num {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transform: rotate(90deg);
+}
+
+/* ********************************Responsiveness********************************* */
+
+/* *********************************Tablet********************************* */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 
+            50%,    /* pattern-circle */
+            80%,    /* pattern-lines */
+            50%,    /* squiggly-line-bottom */
+            50%,    /* squiggly-line-top */
+            cover;  /* background */
+    }
+
+    .form {
+        padding: 30px 50px;
+    }
+
+    .heading h1 {
+        font-size: 2.8rem;
+    }
+
+    .conHeading h1 {
+        font-size: 2.8rem;
+    }
+
+    .ticket {
+        max-width: 90%;
+    }
+
+    .ticket-content {
+        padding: 1.5rem;
+    }
+
+    .second-part {
+        margin-left: 100px;
+    }
+}
+
+
+/* *********************************Mobile********************************* */
+@media screen and (max-width: 480px) {
+    body {
+        background-size: 
+            70%,    /* pattern-circle */
+            100%,   /* pattern-lines */
+            70%,    /* squiggly-line-bottom */
+            70%,    /* squiggly-line-top */
+            cover;  /* background */
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .heading p {
+        font-size: 1.1rem;
+    }
+
+    .conHeading h1 {
+        font-size: 2.2rem;
+        margin-top: 40px;
+    }
+
+    .conHeading p {
+        font-size: 1.1rem;
+    }
+
+    .info-text {
+        width: 100%;
+    }
+
+    .ticket {
+        max-width: 95%;
+        margin-top: 40px;
+    }
+
+    .ticket-content {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .first-part {
+        padding-right: 0;
+        gap: 1rem;
+    }
+
+    .ticket-date {
+        padding-left: 30px;
+        font-size: 1.1rem;
+    }
+
+    .personal {
+        margin-top: 15px;
+    }
+
+    .personal .avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .name p {
+        font-size: 1.3rem;
+    }
+
+    .github p {
+        font-size: 1.2rem;
+    }
+
+    .second-part {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .ticket-num {
+        transform: rotate(0deg);
+    }
+}
